@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94EA36B32285961800201564 /* RateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA36B22285961800201564 /* RateService.swift */; };
+		94EA6F05228FF135007E0BDA /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F04228FF135007E0BDA /* StoryboardInstantiatable.swift */; };
+		94EA6F0722913549007E0BDA /* UIColor+Revolut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F0622913549007E0BDA /* UIColor+Revolut.swift */; };
+		94EA6F092291395C007E0BDA /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F082291395C007E0BDA /* UIView+Rounded.swift */; };
+		94EA6F0D22915B6F007E0BDA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F0C22915B6F007E0BDA /* Currency.swift */; };
+		94EA6F0F22915BAB007E0BDA /* RateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F0E22915BAB007E0BDA /* RateResponse.swift */; };
+		94EA6F1222917637007E0BDA /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1122917637007E0BDA /* Dependencies.swift */; };
+		94EA6F14229176DA007E0BDA /* DependencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F13229176DA007E0BDA /* DependencyType.swift */; };
+		94EA6F1722917FE5007E0BDA /* AppDelegateHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1622917FE5007E0BDA /* AppDelegateHandlerType.swift */; };
+		94EA6F192291809D007E0BDA /* ApplicationNavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F182291809D007E0BDA /* ApplicationNavigationHandler.swift */; };
+		94EA6F1B229186A5007E0BDA /* ConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1A229186A5007E0BDA /* ConverterPresenter.swift */; };
+		94EA6F1D2291886D007E0BDA /* ConverterTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1C2291886D007E0BDA /* ConverterTableViewManager.swift */; };
+		94EA6F20229462FA007E0BDA /* ReferenceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1F229462FA007E0BDA /* ReferenceProxy.swift */; };
+		94EA6F222295A4BF007E0BDA /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F212295A4BF007E0BDA /* UITableView+Reusable.swift */; };
+		94EA6F252295AA2B007E0BDA /* ErrorHandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F242295AA2A007E0BDA /* ErrorHandable.swift */; };
+		94F03777227ACB43005585DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03776227ACB43005585DD /* AppDelegate.swift */; };
+		94F0377E227ACB47005585DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F0377D227ACB47005585DD /* Assets.xcassets */; };
+		94F03781227ACB47005585DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F0377F227ACB47005585DD /* LaunchScreen.storyboard */; };
+		94F0378C227ACB47005585DD /* RevolutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0378B227ACB47005585DD /* RevolutTests.swift */; };
+		94F03797227ACB47005585DD /* RevolutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03796227ACB47005585DD /* RevolutUITests.swift */; };
+		94F037A6227DA9FC005585DD /* TableVIewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F037A5227DA9FC005585DD /* TableVIewDataSource.swift */; };
+		94F037A9227DADB3005585DD /* ConverterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F037A8227DADB3005585DD /* ConverterVC.storyboard */; };
+		94F037AB227DADC5005585DD /* ConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F037AA227DADC5005585DD /* ConverterVC.swift */; };
+		94F037AF227DAE6A005585DD /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F037AE227DAE6A005585DD /* CurrencyTableViewCell.xib */; };
+		94F037B1227DAEA2005585DD /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F037B0227DAEA2005585DD /* CurrencyTableViewCell.swift */; };
+		94F037B6227DD5F9005585DD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F037B5227DD5F9005585DD /* Network.swift */; };
+		94F037B8227DDAB4005585DD /* CurrencyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F037B7227DDAB4005585DD /* CurrencyVM.swift */; };
+		94F1B1A1229AFE850060B5EC /* Result+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B1A0229AFE850060B5EC /* Result+Networking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F03788227ACB47005585DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F0376B227ACB43005585DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F03772227ACB43005585DD;
+			remoteInfo = Revolut;
+		};
+		94F03793227ACB47005585DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F0376B227ACB43005585DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F03772227ACB43005585DD;
+			remoteInfo = Revolut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94EA36B22285961800201564 /* RateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateService.swift; sourceTree = "<group>"; };
+		94EA6F04228FF135007E0BDA /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		94EA6F0622913549007E0BDA /* UIColor+Revolut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Revolut.swift"; sourceTree = "<group>"; };
+		94EA6F082291395C007E0BDA /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
+		94EA6F0C22915B6F007E0BDA /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		94EA6F0E22915BAB007E0BDA /* RateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResponse.swift; sourceTree = "<group>"; };
+		94EA6F1122917637007E0BDA /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		94EA6F13229176DA007E0BDA /* DependencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyType.swift; sourceTree = "<group>"; };
+		94EA6F1622917FE5007E0BDA /* AppDelegateHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateHandlerType.swift; sourceTree = "<group>"; };
+		94EA6F182291809D007E0BDA /* ApplicationNavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationNavigationHandler.swift; sourceTree = "<group>"; };
+		94EA6F1A229186A5007E0BDA /* ConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterPresenter.swift; sourceTree = "<group>"; };
+		94EA6F1C2291886D007E0BDA /* ConverterTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTableViewManager.swift; sourceTree = "<group>"; };
+		94EA6F1F229462FA007E0BDA /* ReferenceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceProxy.swift; sourceTree = "<group>"; };
+		94EA6F212295A4BF007E0BDA /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		94EA6F242295AA2A007E0BDA /* ErrorHandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandable.swift; sourceTree = "<group>"; };
+		94F03773227ACB43005585DD /* Revolut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revolut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F03776227ACB43005585DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94F0377D227ACB47005585DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94F03780227ACB47005585DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94F03782227ACB47005585DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F03787227ACB47005585DD /* RevolutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F0378B227ACB47005585DD /* RevolutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutTests.swift; sourceTree = "<group>"; };
+		94F0378D227ACB47005585DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F03792227ACB47005585DD /* RevolutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F03796227ACB47005585DD /* RevolutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutUITests.swift; sourceTree = "<group>"; };
+		94F03798227ACB47005585DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F037A5227DA9FC005585DD /* TableVIewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVIewDataSource.swift; sourceTree = "<group>"; };
+		94F037A8227DADB3005585DD /* ConverterVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConverterVC.storyboard; sourceTree = "<group>"; };
+		94F037AA227DADC5005585DD /* ConverterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterVC.swift; sourceTree = "<group>"; };
+		94F037AE227DAE6A005585DD /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		94F037B0227DAEA2005585DD /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		94F037B5227DD5F9005585DD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		94F037B7227DDAB4005585DD /* CurrencyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyVM.swift; sourceTree = "<group>"; };
+		94F1B1A0229AFE850060B5EC /* Result+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Networking.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94F03770227ACB43005585DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F03784227ACB47005585DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F0378F227ACB47005585DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94EA36B12285960500201564 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				94EA36B22285961800201564 /* RateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		94EA6F0A22915AF8007E0BDA /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F04228FF135007E0BDA /* StoryboardInstantiatable.swift */,
+				94EA6F1F229462FA007E0BDA /* ReferenceProxy.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		94EA6F0B22915B47007E0BDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F0C22915B6F007E0BDA /* Currency.swift */,
+				94EA6F0E22915BAB007E0BDA /* RateResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94EA6F1022917625007E0BDA /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F1122917637007E0BDA /* Dependencies.swift */,
+				94EA6F13229176DA007E0BDA /* DependencyType.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		94EA6F1522917FDB007E0BDA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F1622917FE5007E0BDA /* AppDelegateHandlerType.swift */,
+				94F03776227ACB43005585DD /* AppDelegate.swift */,
+				94EA6F182291809D007E0BDA /* ApplicationNavigationHandler.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		94EA6F1E229188A5007E0BDA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F1C2291886D007E0BDA /* ConverterTableViewManager.swift */,
+				94F037AD227DAE46005585DD /* TableViewCells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		94EA6F232295AA02007E0BDA /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F242295AA2A007E0BDA /* ErrorHandable.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		94F0376A227ACB43005585DD = {
+			isa = PBXGroup;
+			children = (
+				94F03775227ACB43005585DD /* Revolut */,
+				94F0378A227ACB47005585DD /* RevolutTests */,
+				94F03795227ACB47005585DD /* RevolutUITests */,
+				94F03774227ACB43005585DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94F03774227ACB43005585DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94F03773227ACB43005585DD /* Revolut.app */,
+				94F03787227ACB47005585DD /* RevolutTests.xctest */,
+				94F03792227ACB47005585DD /* RevolutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94F03775227ACB43005585DD /* Revolut */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F1522917FDB007E0BDA /* AppDelegate */,
+				94EA6F1022917625007E0BDA /* Dependencies */,
+				94EA6F232295AA02007E0BDA /* ErrorHandling */,
+				94EA6F0B22915B47007E0BDA /* Models */,
+				94EA36B12285960500201564 /* Services */,
+				94F037B4227DAF01005585DD /* Networking */,
+				94F037B2227DAEE9005585DD /* Common */,
+				94F037A7227DAD1F005585DD /* UI */,
+				94F0377D227ACB47005585DD /* Assets.xcassets */,
+				94F0377F227ACB47005585DD /* LaunchScreen.storyboard */,
+				94F03782227ACB47005585DD /* Info.plist */,
+			);
+			path = Revolut;
+			sourceTree = "<group>";
+		};
+		94F0378A227ACB47005585DD /* RevolutTests */ = {
+			isa = PBXGroup;
+			children = (
+				94F0378B227ACB47005585DD /* RevolutTests.swift */,
+				94F0378D227ACB47005585DD /* Info.plist */,
+			);
+			path = RevolutTests;
+			sourceTree = "<group>";
+		};
+		94F03795227ACB47005585DD /* RevolutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94F03796227ACB47005585DD /* RevolutUITests.swift */,
+				94F03798227ACB47005585DD /* Info.plist */,
+			);
+			path = RevolutUITests;
+			sourceTree = "<group>";
+		};
+		94F037A4227DA9EA005585DD /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				94F037A5227DA9FC005585DD /* TableVIewDataSource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		94F037A7227DAD1F005585DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				94F037AC227DAE2E005585DD /* Converter */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		94F037AC227DAE2E005585DD /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F1E229188A5007E0BDA /* TableView */,
+				94F037A8227DADB3005585DD /* ConverterVC.storyboard */,
+				94F037AA227DADC5005585DD /* ConverterVC.swift */,
+				94EA6F1A229186A5007E0BDA /* ConverterPresenter.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		94F037AD227DAE46005585DD /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				94F037AE227DAE6A005585DD /* CurrencyTableViewCell.xib */,
+				94F037B0227DAEA2005585DD /* CurrencyTableViewCell.swift */,
+				94F037B7227DDAB4005585DD /* CurrencyVM.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		94F037B2227DAEE9005585DD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				94F037A4227DA9EA005585DD /* Datasources */,
+				94EA6F0A22915AF8007E0BDA /* Misc */,
+				94F037B3227DAEEF005585DD /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		94F037B3227DAEEF005585DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94EA6F0622913549007E0BDA /* UIColor+Revolut.swift */,
+				94EA6F082291395C007E0BDA /* UIView+Rounded.swift */,
+				94EA6F212295A4BF007E0BDA /* UITableView+Reusable.swift */,
+				94F1B1A0229AFE850060B5EC /* Result+Networking.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94F037B4227DAF01005585DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				94F037B5227DD5F9005585DD /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94F03772227ACB43005585DD /* Revolut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F0379B227ACB47005585DD /* Build configuration list for PBXNativeTarget "Revolut" */;
+			buildPhases = (
+				94F0376F227ACB43005585DD /* Sources */,
+				94F03770227ACB43005585DD /* Frameworks */,
+				94F03771227ACB43005585DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Revolut;
+			productName = Revolut;
+			productReference = 94F03773227ACB43005585DD /* Revolut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94F03786227ACB47005585DD /* RevolutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F0379E227ACB47005585DD /* Build configuration list for PBXNativeTarget "RevolutTests" */;
+			buildPhases = (
+				94F03783227ACB47005585DD /* Sources */,
+				94F03784227ACB47005585DD /* Frameworks */,
+				94F03785227ACB47005585DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F03789227ACB47005585DD /* PBXTargetDependency */,
+			);
+			name = RevolutTests;
+			productName = RevolutTests;
+			productReference = 94F03787227ACB47005585DD /* RevolutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94F03791227ACB47005585DD /* RevolutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F037A1227ACB47005585DD /* Build configuration list for PBXNativeTarget "RevolutUITests" */;
+			buildPhases = (
+				94F0378E227ACB47005585DD /* Sources */,
+				94F0378F227ACB47005585DD /* Frameworks */,
+				94F03790227ACB47005585DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F03794227ACB47005585DD /* PBXTargetDependency */,
+			);
+			name = RevolutUITests;
+			productName = RevolutUITests;
+			productReference = 94F03792227ACB47005585DD /* RevolutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94F0376B227ACB43005585DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Igor Shvetsov";
+				TargetAttributes = {
+					94F03772227ACB43005585DD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					94F03786227ACB47005585DD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 94F03772227ACB43005585DD;
+					};
+					94F03791227ACB47005585DD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 94F03772227ACB43005585DD;
+					};
+				};
+			};
+			buildConfigurationList = 94F0376E227ACB43005585DD /* Build configuration list for PBXProject "Revolut" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94F0376A227ACB43005585DD;
+			productRefGroup = 94F03774227ACB43005585DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94F03772227ACB43005585DD /* Revolut */,
+				94F03786227ACB47005585DD /* RevolutTests */,
+				94F03791227ACB47005585DD /* RevolutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94F03771227ACB43005585DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F03781227ACB47005585DD /* LaunchScreen.storyboard in Resources */,
+				94F037AF227DAE6A005585DD /* CurrencyTableViewCell.xib in Resources */,
+				94F0377E227ACB47005585DD /* Assets.xcassets in Resources */,
+				94F037A9227DADB3005585DD /* ConverterVC.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F03785227ACB47005585DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F03790227ACB47005585DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94F0376F227ACB43005585DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EA6F252295AA2B007E0BDA /* ErrorHandable.swift in Sources */,
+				94EA6F222295A4BF007E0BDA /* UITableView+Reusable.swift in Sources */,
+				94EA6F0722913549007E0BDA /* UIColor+Revolut.swift in Sources */,
+				94EA36B32285961800201564 /* RateService.swift in Sources */,
+				94F1B1A1229AFE850060B5EC /* Result+Networking.swift in Sources */,
+				94EA6F20229462FA007E0BDA /* ReferenceProxy.swift in Sources */,
+				94F037AB227DADC5005585DD /* ConverterVC.swift in Sources */,
+				94EA6F1222917637007E0BDA /* Dependencies.swift in Sources */,
+				94EA6F1D2291886D007E0BDA /* ConverterTableViewManager.swift in Sources */,
+				94F037B6227DD5F9005585DD /* Network.swift in Sources */,
+				94F037B8227DDAB4005585DD /* CurrencyVM.swift in Sources */,
+				94F03777227ACB43005585DD /* AppDelegate.swift in Sources */,
+				94EA6F0D22915B6F007E0BDA /* Currency.swift in Sources */,
+				94EA6F14229176DA007E0BDA /* DependencyType.swift in Sources */,
+				94EA6F05228FF135007E0BDA /* StoryboardInstantiatable.swift in Sources */,
+				94EA6F0F22915BAB007E0BDA /* RateResponse.swift in Sources */,
+				94EA6F1B229186A5007E0BDA /* ConverterPresenter.swift in Sources */,
+				94EA6F192291809D007E0BDA /* ApplicationNavigationHandler.swift in Sources */,
+				94F037B1227DAEA2005585DD /* CurrencyTableViewCell.swift in Sources */,
+				94F037A6227DA9FC005585DD /* TableVIewDataSource.swift in Sources */,
+				94EA6F1722917FE5007E0BDA /* AppDelegateHandlerType.swift in Sources */,
+				94EA6F092291395C007E0BDA /* UIView+Rounded.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F03783227ACB47005585DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F0378C227ACB47005585DD /* RevolutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F0378E227ACB47005585DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F03797227ACB47005585DD /* RevolutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F03789227ACB47005585DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F03772227ACB43005585DD /* Revolut */;
+			targetProxy = 94F03788227ACB47005585DD /* PBXContainerItemProxy */;
+		};
+		94F03794227ACB47005585DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F03772227ACB43005585DD /* Revolut */;
+			targetProxy = 94F03793227ACB47005585DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94F0377F227ACB47005585DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94F03780227ACB47005585DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94F03799227ACB47005585DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94F0379A227ACB47005585DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94F0379C227ACB47005585DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = Revolut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.Revolut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94F0379D227ACB47005585DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = Revolut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.Revolut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94F0379F227ACB47005585DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = RevolutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.RevolutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revolut.app/Revolut";
+			};
+			name = Debug;
+		};
+		94F037A0227ACB47005585DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = RevolutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.RevolutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revolut.app/Revolut";
+			};
+			name = Release;
+		};
+		94F037A2227ACB47005585DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = RevolutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.RevolutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revolut;
+			};
+			name = Debug;
+		};
+		94F037A3227ACB47005585DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68X998JP22;
+				INFOPLIST_FILE = RevolutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IS.RevolutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revolut;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94F0376E227ACB43005585DD /* Build configuration list for PBXProject "Revolut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F03799227ACB47005585DD /* Debug */,
+				94F0379A227ACB47005585DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F0379B227ACB47005585DD /* Build configuration list for PBXNativeTarget "Revolut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F0379C227ACB47005585DD /* Debug */,
+				94F0379D227ACB47005585DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F0379E227ACB47005585DD /* Build configuration list for PBXNativeTarget "RevolutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F0379F227ACB47005585DD /* Debug */,
+				94F037A0227ACB47005585DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F037A1227ACB47005585DD /* Build configuration list for PBXNativeTarget "RevolutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F037A2227ACB47005585DD /* Debug */,
+				94F037A3227ACB47005585DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94F0376B227ACB43005585DD /* Project object */;
+}
