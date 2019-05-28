@@ -14,7 +14,7 @@ class ApplicationNavigationHandler: AppDelegateHandlerType {
         
         // TODO: implement proper navigation with Dependecy injection
         
-        let dependencies = AppDependencies(rateService: RateService())
+        let dependencies = AppDependencies(rateService: NetworkRateService())
         
         let rootVC = ConverterVC.instantiate()
         let presenter = CommonConverterPresenter(view: rootVC, dependencies: dependencies)

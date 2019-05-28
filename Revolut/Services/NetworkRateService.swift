@@ -10,7 +10,11 @@ import Foundation
 
 typealias RatesHandler = Result<[String: Double], Error>
 
-final class RateService {
+protocol RateService {
+    func getCurrency(base: String, completion: @escaping (RatesHandler) -> Void)
+}
+
+final class NetworkRateService: RateService {
     
     func getCurrency(base: String, completion: @escaping (RatesHandler) -> Void) {
         let params = ["base": base]

@@ -27,46 +27,126 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Revolut/UI/Converter/TableView/ConverterTableViewManager.swift"
-            timestampString = "580583552.426841"
+            filePath = "RevolutTests/ConverterPresenterTest.swift"
+            timestampString = "580755418.528271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testInitialLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Revolut/UI/Converter/ConverterPresenter.swift"
+            timestampString = "580755418.528718"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "loadInitialState()"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Revolut.ConverterTableViewManager.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Swift.Double&gt;, Swift.Error&gt;) -&gt; () in Revolut.CommonConverterPresenter.(loadInitialState in _556AB6CDE9CF078E99092EA5DAEDE292)() -&gt; ()"
                   moduleName = "Revolut"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/TableView/ConverterTableViewManager.swift"
-                  timestampString = "580234658.547678"
+                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/ConverterPresenter.swift"
+                  timestampString = "580755297.618829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "297">
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1224">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Revolut.ConverterTableViewManager.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Revolut"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Swift.Double&gt;, Swift.Error&gt;) -&gt; () in RevolutTests.CommonConverterPresenter.(loadInitialState in _D9FE2B522468F6A7BC13F79544AD67F3)() -&gt; ()"
+                  moduleName = "RevolutTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/TableView/ConverterTableViewManager.swift"
-                  timestampString = "580234658.550863"
+                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/ConverterPresenter.swift"
+                  timestampString = "580755298.2251149"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "202">
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1224">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Revolut/UI/Converter/ConverterPresenter.swift"
+            timestampString = "580755418.528789"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "loadInitialState()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Swift.Double&gt;, Swift.Error&gt;) -&gt; () in Revolut.CommonConverterPresenter.(loadInitialState in _556AB6CDE9CF078E99092EA5DAEDE292)() -&gt; ()"
+                  moduleName = "Revolut"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/ConverterPresenter.swift"
+                  timestampString = "580755297.6236531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1849">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Swift.Double&gt;, Swift.Error&gt;) -&gt; () in RevolutTests.CommonConverterPresenter.(loadInitialState in _D9FE2B522468F6A7BC13F79544AD67F3)() -&gt; ()"
+                  moduleName = "RevolutTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shved/Projects/Revolut/Revolut/UI/Converter/ConverterPresenter.swift"
+                  timestampString = "580755298.228991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1849">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RevolutTests/Mocks.swift"
+            timestampString = "580755418.5288531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "display(error:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

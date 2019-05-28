@@ -12,3 +12,7 @@ struct Currency: Codable {
     var name: String
     var value: Double    
 }
+
+extension Currency: Equatable {
+    
+}

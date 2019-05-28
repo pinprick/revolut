@@ -26,7 +26,7 @@ class ConverterVC: UIViewController, StoryboardBased {
     private var presenter: ConverterPresenter!
     private var tableViewManager: ConverterTableViewManager<Currency, CurrencyTableViewCell>?
     private let spinner = UIActivityIndicatorView(style: .gray)
-    private let rateService = RateService()
+    private let rateService = NetworkRateService()
     
     private var cellConfigurator:  (Currency, CurrencyTableViewCell) -> Void {
         return { currency, cell in
@@ -87,7 +87,7 @@ extension ConverterVC: ConverterView {
     }
     
     func showLoader(_ visible: Bool) {
-        DispatchQueue.main.async {        
+        DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = visible
         }
     }
