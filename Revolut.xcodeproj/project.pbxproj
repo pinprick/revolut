@@ -54,6 +54,7 @@
 		94F1B1BB229D80E50060B5EC /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B1BA229D80E50060B5EC /* Mocks.swift */; };
 		94F1B1BC229D84EF0060B5EC /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F1122917637007E0BDA /* Dependencies.swift */; };
 		94F1B1BD229D887E0060B5EC /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA6F04228FF135007E0BDA /* StoryboardInstantiatable.swift */; };
+		94F1B1BF22A40A640060B5EC /* SessionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B1BE22A40A640060B5EC /* SessionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		94F1B1A5229C34F10060B5EC /* DataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTest.swift; sourceTree = "<group>"; };
 		94F1B1AF229C52D10060B5EC /* ConverterPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterPresenterTest.swift; sourceTree = "<group>"; };
 		94F1B1BA229D80E50060B5EC /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		94F1B1BE22A40A640060B5EC /* SessionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 		94F0378A227ACB47005585DD /* RevolutTests */ = {
 			isa = PBXGroup;
 			children = (
+				94F1B1BE22A40A640060B5EC /* SessionTest.swift */,
 				94F1B1AF229C52D10060B5EC /* ConverterPresenterTest.swift */,
 				94F1B1A5229C34F10060B5EC /* DataSourceTest.swift */,
 				94F1B1BA229D80E50060B5EC /* Mocks.swift */,
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F1B1BF22A40A640060B5EC /* SessionTest.swift in Sources */,
 				94F1B1BC229D84EF0060B5EC /* Dependencies.swift in Sources */,
 				94F1B1AC229C471C0060B5EC /* CurrencyTableViewCell.swift in Sources */,
 				94F1B1B1229C531A0060B5EC /* ConverterPresenter.swift in Sources */,

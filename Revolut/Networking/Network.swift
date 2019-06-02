@@ -78,9 +78,13 @@ extension Resource where A: Decodable {
     }
 }
 
+protocol Session {
+    func load<A>(_ resource: Resource<A>, completion: @escaping (Result<A?, Error>) -> ())
+}
+
 // MARK: Foundation extensions
 
-extension URLSession {
+extension URLSession: Session {
     func load<A>(_ resource: Resource<A>, completion: @escaping (Result<A?, Error>) -> ()) {
         dataTask(with: resource.urlRequest) { data, _, error in
             if let error = error { completion(.failure(error)) }

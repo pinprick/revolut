@@ -16,10 +16,16 @@ protocol RateService {
 
 final class NetworkRateService: RateService {
     
+    private var session: Session
+    
+    init(session: Session = URLSession.shared) {
+        self.session = session
+    }
+    
     func getCurrency(base: String, completion: @escaping (RatesHandler) -> Void) {
         let params = ["base": base]
 
-        URLSession.shared.load(RateResponse.resource(params: params)) { result in
+        session.load(RateResponse.resource(params: params)) { result in
             switch result {
             case .success(let rateResponse):
                 completion(RatesHandler.success(rateResponse?.rates ?? [:]))

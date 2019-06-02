@@ -21,6 +21,8 @@ struct RateResponse: Codable {
     var rates: [String: Double]
 }
 
+extension RateResponse: Equatable {}
+
 // MARK: Networking
 
 typealias RateResponseHandler = Result<RateResponse, Error>
